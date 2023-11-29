@@ -7,6 +7,8 @@ A supervised learning model defines a mapping from one or more inputs to one or 
 ### 2.1 Supervised learning overview
 
 In supervised learning, our goal is to build a model, denoted as $f_{\phi}(\cdot)$, that takes an input $\mathbf x$ and outputs a prediction $\mathbf y$. 
+
+
 $$
 \mathbf y = f_\phi(\mathbf x)
 $$
