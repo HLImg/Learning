@@ -12,6 +12,8 @@ In supervised learning, our goal is to build a model, denoted as $f_{\phi}(\cdot
 $$
 \mathbf y = f_\phi(\mathbf x)
 $$
+
+
 where the $\phi$ represents the model's parameters.
 
 ### Notes
