@@ -87,19 +87,22 @@ $$
 
 > Consider reformulating linear regression as a generative model, so we have $x=g_\phi(y)$. *What is the new loss function?* Find an expression for the inverse function $y = g^{-1}_{\phi}(x)$ that we would use to perform **inference**. Will this model make the same predictions as the **discriminative** version for a given training dataset $\{x_i, y_i\}$ ? One way to establish this is to write code that fits a line to three data points both methods and see if the result is the same.
 
-The goal of generative models is to maximize the likelihood of the data, that is, to find the parameters $\phi$ that maximize the probability of observed data. The linear regression for generation are formulated as follows
+The goal of generative models is to maximize the likelihood of the data, that is, to find the parameters $\phi$ that maximize the probability of observed data. The linear regression for generation are formulated as follows.
+
 $$
 x = g(y)=\phi_0 + \phi_1 y + \epsilon, \epsilon \in \mathcal N(0, \sigma^2)
 $$
 
 
 Given the parameter $\phi =\{\phi_0, \phi_1\}$, the likelihood of observed data $(x, y)$ as follows.
+
 $$
 \begin{aligned}
 L (\phi, \sigma| x, y) &= \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{(x -g(y))^2}{2\sigma^2}\right)\\
 L (\phi, \sigma| x, y) &= \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{(x -(\phi_0 + \phi_1 y + \epsilon))^2}{2\sigma^2}\right)
 \end{aligned}
 $$
+
 by taking the log-likelihood, the loss function is negative log-likelihood.
 
 
@@ -118,9 +121,12 @@ $$
 > - Discriminative models: The goal is to directly model the **conditional probability distribution** of the output y given the input x, that is $P(y|x)$, The loss function typically measures the difference between prediction and ground-truth. In there models, x is the given features, and y is target variable that model aims to predict. 
 
 Now, we can inverse the generative function $g_\phi(\cdot)$ to inference. 
+
 $$
 y = g^{-1}_\phi(x) = \frac{x-\phi_0}{\phi_1}
 $$
+
+
 ![](./problem_3.png)
 
 
