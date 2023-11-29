@@ -1,6 +1,6 @@
 ## Chapter 1 
 
-### Introduction
+## Introduction
 
 Machine learning methods can coarsely divided into three categories as follows.
 

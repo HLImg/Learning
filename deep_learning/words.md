@@ -19,3 +19,8 @@
 15. It would be irresponsible to write this book without discussing the ethical implications of artificial intelligence. 
 16. This potent technology will change the world to at least the same extent as electricity.
 17. However, it remains unknown whether it is possible to build complex decision-making systems that are fully transparent to their used or even their creator.
+
+## Chapter-2
+
+1. A simple model like a line might not be able to capture the true relationship between input and output.
+2. A supervised learning model is a function $\mathbf y = \mathbf f_{\phi}(\mathbf x)$ that relates inputs $\mathbf x$ to outputs $\mathbf y$. The particular relationship is determined by parameters $\phi$
